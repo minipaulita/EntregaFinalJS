@@ -152,9 +152,9 @@ function sweetAlert(e) {
   Swal.fire("Producto agregado", "Producto agregado al carrito", "success");
   if (agregarCarrito.nombre === `Agenda`) {
     $(`#product1`)
-      .append(`<div class="row"><button  id="menosProd1" class="col btn btn-warning m-5">-</button>
+      .append(`<div class="row"><button  id="menosProd1" class="col-sm btn btn-warning m-5">-</button>
       <p id="cantidad1" class="col my-5">${almacenados[0].cantidad} </p>
-      <button id="masProd1" class="col btn btn-warning m-5">+</button>
+      <button id="masProd1" class="col-sm btn btn-warning m-5">+</button>
       </div>
     `);
     $(`#buttonCompra1`).prop("disabled", true);
@@ -162,9 +162,9 @@ function sweetAlert(e) {
   }
   if (agregarCarrito.nombre === `Anotador`) {
     $(`#product2`)
-      .append(`<div class="row"><button  id="menosProd2" class="col btn btn-warning m-5">-</button>
+      .append(`<div class="row"><button  id="menosProd2" class="col-sm btn btn-warning m-5">-</button>
       <p id="cantidad2" class="col my-5">${almacenados[1].cantidad} </p>
-      <button id="masProd2" class="col btn btn-warning m-5">+</button>
+      <button id="masProd2" class="col-sm btn btn-warning m-5">+</button>
       </div>
     `);
     $(`#buttonCompra2`).prop("disabled", true);
