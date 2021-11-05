@@ -136,7 +136,6 @@ $(`#buscar`).click(() => {
     `<button id="volverInicio" class=" btn btn-warning m-4">Volver a Inicio</button>`
   );
   $(`#buscar`).prop("disabled", true);
-
   $(`#volverInicio`).click(() => {
     mapeo(almacenados);
     $(`#volverInicio`).remove();
